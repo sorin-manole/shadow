@@ -2,7 +2,7 @@
 
 Shadow configures the default `shadowJar` task to merge all dependencies from the project's `runtime` configuration
 into the final JAR.
-The configurations to from which to source dependencies for the merging can be configured using the `configurations` property
+The configurations from which to source dependencies for the merging can be configured using the `configurations` property
 of the [`ShadowJar`](http://imperceptiblethoughts.com/shadow/api/com/github/jengelman/gradle/plugins/shadow/tasks/ShadowJar.html) task type.
 
 ```groovy
@@ -12,7 +12,7 @@ shadowJar {
 ```
 
 The above code sample would configure the `shadowJar` task to merge dependencies from only the `compile` configuration.
-This means any dependency declared in the `runtime` configuration would be **not** be included in the final JAR.
+This means any dependency declared in the `runtime` configuration would **not** be included in the final JAR.
 
 > Note the literal use of `project.configurations` when setting the `configurations` attribute of a
 [`ShadowJar`](http://imperceptiblethoughts.com/shadow/api/com/github/jengelman/gradle/plugins/shadow/tasks/ShadowJar.html) task.
